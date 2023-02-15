@@ -1,6 +1,6 @@
 const abi = {
   "source": {
-    "hash": "0xdbd820632cac69fa09d8c238c682507ee34380f99c33d1604b0bb539e42ee05b",
+    "hash": "0xce13afc0ebdabe51c4fc621566658bbd6694c7d757680996336beb48caf87f59",
     "language": "ink! 3.4.0",
     "compiler": "rustc 1.68.0-nightly"
   },
@@ -58,38 +58,6 @@ const abi = {
           "docs": [
             " Simply return value."
           ],
-          "label": "get_approvers_count",
-          "mutates": false,
-          "payable": false,
-          "returnType": {
-            "displayName": [
-              "u128"
-            ],
-            "type": 3
-          },
-          "selector": "0x45358fc5"
-        },
-        {
-          "args": [],
-          "docs": [
-            " Simply return value."
-          ],
-          "label": "get_approval_count",
-          "mutates": false,
-          "payable": false,
-          "returnType": {
-            "displayName": [
-              "u128"
-            ],
-            "type": 3
-          },
-          "selector": "0x381a72e4"
-        },
-        {
-          "args": [],
-          "docs": [
-            " Simply return value."
-          ],
           "label": "get_description",
           "mutates": false,
           "payable": false,
@@ -97,7 +65,7 @@ const abi = {
             "displayName": [
               "Option"
             ],
-            "type": 9
+            "type": 6
           },
           "selector": "0x91cbb7bc"
         },
@@ -157,7 +125,7 @@ const abi = {
                 "displayName": [
                   "Option"
                 ],
-                "type": 9
+                "type": 6
               }
             },
             {
@@ -187,7 +155,7 @@ const abi = {
             "displayName": [
               "Result"
             ],
-            "type": 10
+            "type": 7
           },
           "selector": "0xa90550ab"
         },
@@ -201,7 +169,7 @@ const abi = {
             "displayName": [
               "Result"
             ],
-            "type": 13
+            "type": 10
           },
           "selector": "0x463a3d58"
         },
@@ -215,7 +183,7 @@ const abi = {
             "displayName": [
               "Result"
             ],
-            "type": 13
+            "type": 10
           },
           "selector": "0xf7227c67"
         }
@@ -244,34 +212,16 @@ const abi = {
           },
           {
             "layout": {
-              "cell": {
-                "key": "0x0200000000000000000000000000000000000000000000000000000000000000",
-                "ty": 4
-              }
-            },
-            "name": "approvers"
-          },
-          {
-            "layout": {
-              "cell": {
-                "key": "0x0300000000000000000000000000000000000000000000000000000000000000",
-                "ty": 3
-              }
-            },
-            "name": "approvers_count"
-          },
-          {
-            "layout": {
               "enum": {
-                "dispatchKey": "0x0400000000000000000000000000000000000000000000000000000000000000",
+                "dispatchKey": "0x0200000000000000000000000000000000000000000000000000000000000000",
                 "variants": {
                   "0": {
                     "fields": [
                       {
                         "layout": {
                           "cell": {
-                            "key": "0x0500000000000000000000000000000000000000000000000000000000000000",
-                            "ty": 8
+                            "key": "0x0300000000000000000000000000000000000000000000000000000000000000",
+                            "ty": 4
                           }
                         },
                         "name": null
@@ -289,7 +239,7 @@ const abi = {
           {
             "layout": {
               "cell": {
-                "key": "0x0500000000000000000000000000000000000000000000000000000000000000",
+                "key": "0x0300000000000000000000000000000000000000000000000000000000000000",
                 "ty": 3
               }
             },
@@ -298,7 +248,7 @@ const abi = {
           {
             "layout": {
               "cell": {
-                "key": "0x0600000000000000000000000000000000000000000000000000000000000000",
+                "key": "0x0400000000000000000000000000000000000000000000000000000000000000",
                 "ty": 0
               }
             },
@@ -307,7 +257,7 @@ const abi = {
           {
             "layout": {
               "cell": {
-                "key": "0x0700000000000000000000000000000000000000000000000000000000000000",
+                "key": "0x0500000000000000000000000000000000000000000000000000000000000000",
                 "ty": 5
               }
             },
@@ -316,7 +266,7 @@ const abi = {
           {
             "layout": {
               "cell": {
-                "key": "0x0800000000000000000000000000000000000000000000000000000000000000",
+                "key": "0x0600000000000000000000000000000000000000000000000000000000000000",
                 "ty": 3
               }
             },
@@ -377,30 +327,10 @@ const abi = {
         "id": 4,
         "type": {
           "def": {
-            "composite": {
-              "fields": [
-                {
-                  "type": 6
-                }
-              ]
+            "sequence": {
+              "type": 2
             }
-          },
-          "params": [
-            {
-              "name": "K",
-              "type": 0
-            },
-            {
-              "name": "V",
-              "type": 5
-            }
-          ],
-          "path": [
-            "openbrush_lang",
-            "storage",
-            "mapping",
-            "Mapping"
-          ]
+          }
         }
       },
       {
@@ -415,37 +345,6 @@ const abi = {
         "id": 6,
         "type": {
           "def": {
-            "sequence": {
-              "type": 7
-            }
-          }
-        }
-      },
-      {
-        "id": 7,
-        "type": {
-          "def": {
-            "tuple": [
-              0,
-              5
-            ]
-          }
-        }
-      },
-      {
-        "id": 8,
-        "type": {
-          "def": {
-            "sequence": {
-              "type": 2
-            }
-          }
-        }
-      },
-      {
-        "id": 9,
-        "type": {
-          "def": {
             "variant": {
               "variants": [
                 {
@@ -455,7 +354,7 @@ const abi = {
                 {
                   "fields": [
                     {
-                      "type": 8
+                      "type": 4
                     }
                   ],
                   "index": 1,
@@ -467,7 +366,7 @@ const abi = {
           "params": [
             {
               "name": "T",
-              "type": 8
+              "type": 4
             }
           ],
           "path": [
@@ -476,7 +375,7 @@ const abi = {
         }
       },
       {
-        "id": 10,
+        "id": 7,
         "type": {
           "def": {
             "variant": {
@@ -484,7 +383,7 @@ const abi = {
                 {
                   "fields": [
                     {
-                      "type": 11
+                      "type": 8
                     }
                   ],
                   "index": 0,
@@ -493,7 +392,7 @@ const abi = {
                 {
                   "fields": [
                     {
-                      "type": 12
+                      "type": 9
                     }
                   ],
                   "index": 1,
@@ -505,11 +404,11 @@ const abi = {
           "params": [
             {
               "name": "T",
-              "type": 11
+              "type": 8
             },
             {
               "name": "E",
-              "type": 12
+              "type": 9
             }
           ],
           "path": [
@@ -518,7 +417,7 @@ const abi = {
         }
       },
       {
-        "id": 11,
+        "id": 8,
         "type": {
           "def": {
             "tuple": []
@@ -526,7 +425,7 @@ const abi = {
         }
       },
       {
-        "id": 12,
+        "id": 9,
         "type": {
           "def": {
             "variant": {
@@ -552,7 +451,7 @@ const abi = {
         }
       },
       {
-        "id": 13,
+        "id": 10,
         "type": {
           "def": {
             "variant": {
@@ -560,7 +459,7 @@ const abi = {
                 {
                   "fields": [
                     {
-                      "type": 11
+                      "type": 8
                     }
                   ],
                   "index": 0,
@@ -569,7 +468,7 @@ const abi = {
                 {
                   "fields": [
                     {
-                      "type": 14
+                      "type": 11
                     }
                   ],
                   "index": 1,
@@ -581,11 +480,11 @@ const abi = {
           "params": [
             {
               "name": "T",
-              "type": 11
+              "type": 8
             },
             {
               "name": "E",
-              "type": 14
+              "type": 11
             }
           ],
           "path": [
@@ -594,7 +493,7 @@ const abi = {
         }
       },
       {
-        "id": 14,
+        "id": 11,
         "type": {
           "def": {
             "variant": {
@@ -602,7 +501,7 @@ const abi = {
                 {
                   "fields": [
                     {
-                      "type": 8,
+                      "type": 4,
                       "typeName": "String"
                     }
                   ],
@@ -622,5 +521,4 @@ const abi = {
     ]
   }
 };
-
 export default abi;

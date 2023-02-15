@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 
 .footer {
@@ -132,3 +132,8 @@
   display: flex;
   flex-direction: row;
 }
+
+.underline {
+  border-bottom:double;/*二重線を引く*/
+  border-width:3px;
+  }

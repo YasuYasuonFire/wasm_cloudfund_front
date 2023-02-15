@@ -165,8 +165,11 @@ const Home: NextPage = () => {
       // output the return value
       console.log('Success', output?.toHuman())
 
-      if (output) {
-        setDescription(output?.toHuman().toString())
+      if (output) {  
+        let description = output?.toHuman()?.toString(); 
+        if(description){
+          setDescription(description);
+        }
       }
     } else {
       console.error('Error', result.asErr)

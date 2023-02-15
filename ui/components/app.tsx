@@ -54,7 +54,7 @@ const Home: NextPage = () => {
   const [gatheredvalue, setGatheredvalue] = useState(BigInt(0))
 
   const [newdescription, setNewescription] = useState<string>('')
-  const [newvalue, setNewvalue] = useState(BigInt(0))
+  const [newvalue, setNewvalue] = useState(0)
   const [newrecipient, setNewrecipient] = useState('')
 
 
@@ -126,7 +126,7 @@ const Home: NextPage = () => {
       console.log('Success', output?.toHuman())
 
       if (output) {
-        setMinimumContribution(output?.toString())
+        setMinimumContribution(Number(output?.toString()))
       }
     } else {
       console.error('Error', result.asErr)
@@ -166,7 +166,7 @@ const Home: NextPage = () => {
       console.log('Success', output?.toHuman())
 
       if (output) {
-        setDescription(output?.toHuman())
+        setDescription(output?.toHuman().toString())
       }
     } else {
       console.error('Error', result.asErr)
@@ -205,7 +205,7 @@ const Home: NextPage = () => {
       console.log('Success', output?.toHuman())
 
       if (output) {
-        setValue(output?.toString())
+        setValue(BigInt(output?.toString()))
       }
     } else {
       console.error('Error', result.asErr)
@@ -285,7 +285,7 @@ const Home: NextPage = () => {
       console.log('Success', output?.toHuman())
 
       if (output) {
-        setGatheredvalue(output?.toString())
+        setGatheredvalue(BigInt(output?.toString()))
       }
     } else {
       console.error('Error', result.asErr)
@@ -512,7 +512,7 @@ const FinalizeRequest = async () => {
  
           <input
               type='number'
-              onChange={e => setFundvalue(e.target.value)}
+              onChange={e => setFundvalue(BigInt(e.target.value))}
             /> SDN</p>
           <div>
           <button onClick={e => approveRequest()}>Fund to Proposal</button>
@@ -532,7 +532,7 @@ const FinalizeRequest = async () => {
             <input
               type='text'
               value={newvalue}
-              onChange={e => setNewvalue(e.target.value)}
+              onChange={e => setNewvalue(Number(e.target.value))}
             /> SDN </p>
             <p>recipient:　　　
             <input

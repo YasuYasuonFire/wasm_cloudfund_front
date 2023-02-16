@@ -26,7 +26,7 @@ import { send } from 'process'
 
 // shiden
 //const WS_PROVIDER = 'wss://shiden-rpc.dwellir.com'
-const WS_PROVIDER = 'wss://shiden.public.blastapi.io'
+const WS_PROVIDER = 'wss://shiden.api.onfinality.io/public-ws'
 
 const proofSize = 131072
 const refTime = 6219235328

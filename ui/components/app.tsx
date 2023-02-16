@@ -25,8 +25,8 @@ import { send } from 'process'
 //const WS_PROVIDER = 'wss://shibuya-rpc.dwellir.com'
 
 // shiden
-const WS_PROVIDER = 'wss://shiden-rpc.dwellir.com'
-
+//const WS_PROVIDER = 'wss://shiden-rpc.dwellir.com'
+const WS_PROVIDER = 'wss://rpc.shiden.astar.network'
 
 const proofSize = 131072
 const refTime = 6219235328

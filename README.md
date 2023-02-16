@@ -1,5 +1,11 @@
 # OnChain CloudFunding by WASM
 
+### アプリケーションURL
+https://wasm-cloudfund-front.vercel.app/
+
+### リポジトリ（スマートコントラクト）
+https://github.com/YasuYasuonFire/wasm_cloudfund_contract
+
 ## What it does
 オンチェーンで透明性のあるクラウドファンディングを行えるスマートコントラクトです。<br>
 提案に対し、ユーザーは自由な金額で寄付を行えます。<br>
